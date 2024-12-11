@@ -1,0 +1,34 @@
+.option {
+    @apply hover:text-red-500 duration-150
+}
+
+.optionContainer li{
+    position: relative;
+}
+.optionContainer li::after{
+    content: "";
+    height: 3px;
+    width:0;
+    background:#d172dd;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    margin: 0 auto;
+    bottom: -4px;
+    transition: .2s all ease-in-out;
+}
+.optionContainer li:hover::after{
+    width: 100%;
+}
+.optionContainer li.activeOption::after{
+    width: 100%;
+}
+
+@media (max-width:768px){
+    .navbarResponsive{
+      @apply absolute flex-col min-h-screen w-[70%] p-10 left-0 duration-200 top-[72.4px] bg-pink-50 shadow-xl
+    }
+    .activer{
+        @apply -left-[80%] duration-200
+    }
+}
