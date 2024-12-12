@@ -1,5 +1,5 @@
 .option {
-    @apply hover:text-red-500 duration-150
+    @apply hover:text-blue-500 duration-150
 }
 
 .optionContainer li{

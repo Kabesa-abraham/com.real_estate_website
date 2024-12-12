@@ -1,0 +1,24 @@
+.hero{
+    background-image: url('../../Assets/imgHome.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+form input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    margin-top: 5px;
+    border-radius: 5px;
+}
+form input::placeholder{
+    @apply text-gray-900
+}
+.box{
+    @apply w-full flex flex-col gap-3 justify-center
+}
+.box span{
+    @apply text-slate-400 text-sm
+}

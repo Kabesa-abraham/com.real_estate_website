@@ -15,11 +15,11 @@ const Header = () => {
 
   return (
     <>
-      <header className='w-full fixed shadow-lg' >
-        <div className='max-w-7xl mx-auto px-3 md:px-10 py-4 flex items-center justify-between'>
+      <header className='w-full fixed shadow-lg bg-white z-50' >
+        <div className='max-w-7xl mx-auto px-3 md:px-4 lg:px-10 py-4 flex items-center justify-between'>
           <div className='flex gap-2 items-center'>
             <img src={logoSite} alt="logo de l'entreprise" className='w-10 md:w-12 h-10 md:h-12' />
-            <h2 className='font-bold text-pink-400' >Homming</h2>
+            <h2 className='font-bold text-blue-400' >Homming</h2>
           </div>
 
           <div className={`${!open&&'activer'} navbarResponsive flex md:flex-row md:static items-center gap-10 `}>
@@ -41,7 +41,7 @@ const Header = () => {
           </div>
 
           <div className='flex gap-5 items-center'>
-            <button className='flex gap-2 items-center px-3 md:px-5 py-2 bg-gradient-to-r from-red-500 to-pink-500 text-white font-semibold rounded-full
+            <button className='flex gap-2 items-center px-3 md:px-5 py-2 bg-gradient-to-r from-blue-500 to-pink-500 text-white font-semibold rounded-full
               text-xs lg:text-sm hover:ring-4 ring-pink-200 duration-150'>
               <MdLogin/> Connection
             </button>
