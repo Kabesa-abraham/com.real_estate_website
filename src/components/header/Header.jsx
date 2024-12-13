@@ -17,10 +17,12 @@ const Header = () => {
     <>
       <header className='w-full fixed shadow-lg bg-white z-50' >
         <div className='max-w-7xl mx-auto px-3 md:px-4 lg:px-10 py-4 flex items-center justify-between'>
-          <div className='flex gap-2 items-center'>
-            <img src={logoSite} alt="logo de l'entreprise" className='w-10 md:w-12 h-10 md:h-12' />
-            <h2 className='font-bold text-blue-400' >Homming</h2>
-          </div>
+          <Link to={'/'} >
+            <div className='flex gap-2 items-center'>
+              <img src={logoSite} alt="logo de l'entreprise" className='w-10 md:w-12 h-10 md:h-12' />
+              <h2 className='font-bold text-blue-400' >Homming</h2>
+            </div>
+          </Link>
 
           <div className={`${!open&&'activer'} navbarResponsive flex md:flex-row md:static items-center gap-10 `}>
             <ul className="flex flex-col md:flex-row items-center gap-8 font-semibold relative optionContainer">

@@ -7,11 +7,13 @@ import Services from "./components/services/Services";
 import Blog from "./components/blog/Blog";
 import Pricing from "./components/pricing/Pricing";
 import Contact from "./components/contact/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
        <Header/>
+       <ScrollToTop/>
        <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />

@@ -343,14 +343,14 @@ export const price = [
 export const footer = [
   {
     title: "LAYOUTS",
-    text: [{ list: "Home Page" }, { list: "About Page" }, { list: "Service Page" }, { list: "Property Page" }, { list: "Contact Page" }, { list: "Single Blog" }],
+    text: [{ list: "Page Home", link:'/' }, { list: "Page Apropo", link:'/about' }, { list: "Page Service", link:'/services' }, { list: "Page Propriété", link:'/blog' }, { list: "Page Contacte", link:'/contact' }, { list: "Single Blog" }],
   },
   {
     title: "TOUT LES SECTIONS",
-    text: [{ list: "Headers" }, { list: "Features" }, { list: "Attractive" }, { list: "Testimonials" }, { list: "Videos" }, { list: "Footers" }],
+    text: [{ list: "Entête" }, { list: "Caracteristiques" }, { list: "Attractive" }, { list: "Testimonials" }, { list: "Videos" }, { list: "Footers" }],
   },
   {
     title: "COMPANIE",
-    text: [{ list: "About" }, { list: "Blog" }, { list: "Pricing" }, { list: "Affiliate" }, { list: "Login" }, { list: "Changelog" }],
+    text: [{ list: "Apropo" }, { list: "Blog" }, { list: "Tarifs" }, { list: "Affiliés" }, { list: "Connection" }, { list: "Changelog" }],
   },
 ]

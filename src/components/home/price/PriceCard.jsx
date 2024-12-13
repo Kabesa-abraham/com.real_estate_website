@@ -24,10 +24,10 @@ const PriceCard = () => {
             <p className="text-center text-sm text-gray-500" >{item.ptext}</p>
 
             <ul className="flex flex-col gap-6 my-3" >
-              {item.list.map((val) => {
+              {item.list.map((val,i) => {
                 const { text, change } = val
                 return (
-                  <li className="flex items-center gap-3 pl-5" >
+                  <li className="flex items-center gap-3 pl-5" key={i} >
                     <label
                     className="text-xs rounded-full p-2"
                       style={{

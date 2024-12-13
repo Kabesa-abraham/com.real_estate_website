@@ -1,6 +1,7 @@
 import React from "react"
 import { footer } from "../Assets/Data.js"
 import logoSite from '/logo.png'
+import { Link } from "react-router-dom"
 
 const Footer = () => {
   return (
@@ -28,23 +29,23 @@ const Footer = () => {
                     <h2 className='font-bold text-xl text-blue-400' >Homming</h2>
                   </div>
 
-                  <h2 className="font-semibold text-lg" >Do You Need Help With Anything?</h2>
-                  <p className="text-gray-500" >Receive updates, hot deals, tutorials, discounts sent straignt in your inbox every month</p>
+                  <h2 className="font-semibold text-lg" >Vous avez besoin d'aide ?</h2>
+                  <p className="text-gray-500" > Recevez des mise à jours, hot deals, tutoriels, discounts sent straignt in your inbox every month</p>
 
                   <div className='flex bg-white rounded-md'>
                     <input type='text' placeholder='Email Address' className="w-full text-black bg-transparent border-none outline-none py-2 md:py-3 pl-5 text-sm md:text-lg " />
-                    <button className="px-5 lg:px-10 bg-blue-600 rounded-r-md hover:ring-4 ring-blue-400 duration-150 text-xs md:text-sm font-semibold" >Subscribe</button>
+                    <button className="px-5 lg:px-10 bg-blue-600 rounded-r-md hover:ring-4 ring-blue-400 duration-150 text-xs md:text-sm font-semibold" >S'inscrire</button>
                   </div>
                 </div>
               </div>
 
               <div className="w-full flex flex-wrap justify-between gap-10 " >
-                {footer.map((val) => (
-                  <div className='flex flex-col gap-6'>
+                {footer.map((val,i) => (
+                  <div className='flex flex-col gap-6' key={i} >
                     <h3 className="text-lg font-semibold" >{val.title}</h3>
                     <ul className="flex flex-col gap-5 text-gray-500 text-sm" >
-                      {val.text.map((items) => (
-                        <li> {items.list} </li>
+                      {val.text.map((items,i) => (
+                        <Link to={items.link} key={i} ><li> {items.list} </li></Link>
                       ))}
                     </ul>
                   </div>
