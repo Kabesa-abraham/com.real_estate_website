@@ -11,7 +11,7 @@ const Footer = () => {
               <div className='flex justify-between items-center text-white py-7'>
                 <div className='flex flex-col gap-2 md:gap-4 text-xs lg:text-sm'>
                   <h1 className="text-lg sm:text-xl md:text-3xl lg:text-4xl font-bold" >Avez-vous des Questions ?</h1>
-                  <p>We'll help you to grow your career and growth.</p>
+                  <p>Nous vous aiderons à vous developper dans votre Carrière.</p>
                 </div>
                 <button className='px-2 md:px-4 lg:px-8 py-3 lg:py-4 bg-white text-blue-500 rounded-full text-xs font-bold 
                                    hover:ring-4 ring-blue-400 duration-150'>Nous Contactez</button>
